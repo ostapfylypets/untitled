@@ -29,3 +29,7 @@ h2{
     text-align: center;
     font-size: 30px;
             }
+      a{
+          text-decoration:none;
+          color:black;
+      }
