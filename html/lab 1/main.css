@@ -2,34 +2,45 @@ html {
     scroll-behavior: smooth;
     background-color: #cdcdcd;
 }
-    h1{
-        width: 80%;
+
+h1 {
+    width: 80%;
 
 
-        text-align: center;
-        font-size: 30px;
+    text-align: center;
+    font-size: 30px;
 
 
-    }
-    .target {
-        display: flex;
-    }
-span{ padding: 1% 120px 1% 120px;
-    text-align:justify;
 }
-#image1{
+
+.target {
+    display: flex;
+}
+
+span {
+    padding: 1% 120px 1% 120px;
+    text-align: justify;
+}
+
+#image1 {
     width: 175px;
     height: 175px;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 30px;
 }
-      ul{
+
+ul {
     text-align: center;
     font-size: 30px;
-            }
-      a{
-          text-decoration:none;
-          color:black;
-      }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.content{
+    display: flex;
+}
