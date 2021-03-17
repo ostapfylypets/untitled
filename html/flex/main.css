@@ -1,0 +1,29 @@
+.square{
+
+
+    width: 1300px;
+    background-color: #514f4f;
+    margin: 0 auto;
+display: flex;
+    flex-wrap: wrap;
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.a{
+    background-color: #f50101;
+    width: 100%;
+
+}
+.b{
+    background-color: blue;
+    width: 50%;
+}
+.c{
+    background-color: coral;
+    width: 50%;
+}
+
