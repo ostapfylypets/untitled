@@ -1,0 +1,39 @@
+.full{
+    display: flex;
+    width: 1000px;
+    height: 1200px;
+    background-color: #9f9f9f;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#header{
+    width:  1000px;
+    height: 100px;
+}
+#nav{
+    width: 1000px;
+    height: 100px;
+}
+.two{
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    height: 900px;
+    width: 1000px;
+    display: flex;
+}
+#main{
+    height: 900px;
+    width: 600px;
+}
+#aside{
+   width: 400px;
+    height: 900px;
+}
+#footer{
+    height: 100px;
+    width: 1000px;
+}
