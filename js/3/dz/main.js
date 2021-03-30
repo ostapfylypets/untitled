@@ -118,46 +118,46 @@ let users = [{
 // За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
 //     Блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
-
-for (let i = 0; i < users.length; i++) {
-    const userName = document.createElement('div');
-    userName.innerHTML = `hello my name ${users[i].name}<br>
-my age ${users[i].age}
-`;
-
-    userName.style.backgroundColor = 'purple';
-    userName.style.margin = '15px';
-    document.body.appendChild(userName);
-
-    const userDiv = document.createElement('div');
-      userName.appendChild(userDiv);
-
-    for (let j = 0; j < 1; j++) {
-        const userCity = document.createElement('div');
-        userCity.innerHTML = `my city ${users[i].address.city}`;
-        userCity.style.backgroundColor = 'red';
-       userDiv.appendChild(userCity);
-    }
-    for (let K = 0; K < 1; K++) {
-        const userCountry = document.createElement('div');
-        userCountry.innerHTML = `my country ${users[i].address.country}`;
-        userCountry.style.backgroundColor = 'blue';
-        userDiv.appendChild(userCountry);
-
-    }
-    for (let n = 0; n < 1; n++) {
-        const userStreet = document.createElement('div');
-        userStreet.innerHTML = `my country ${users[i].address.street}`;
-        userStreet.style.backgroundColor = 'yellow';
-        userDiv.appendChild(userStreet);
-
-    }
-    for (let m = 0; m < 1; m++) {
-        const userNumber = document.createElement('div');
-        userNumber.innerHTML = ` my house number ${users[i].address.houseNumber}`;
-        userNumber.style.backgroundColor = 'pink';
-        userDiv.appendChild(userNumber);
-
-    }
-}
-
+//
+// for (let i = 0; i < users.length; i++) {
+//     const userName = document.createElement('div');
+//     userName.innerHTML = `hello my name ${users[i].name}<br>
+// my age ${users[i].age}
+// `;
+//
+//     userName.style.backgroundColor = 'purple';
+//     userName.style.margin = '15px';
+//     document.body.appendChild(userName);
+//
+//     const userDiv = document.createElement('div');
+//       userName.appendChild(userDiv);
+//
+//     for (let j = 0; j < 1; j++) {
+//         const userCity = document.createElement('div');
+//         userCity.innerHTML = `my city ${users[i].address.city}`;
+//         userCity.style.backgroundColor = 'red';
+//        userDiv.appendChild(userCity);
+//     }
+//     for (let K = 0; K < 1; K++) {
+//         const userCountry = document.createElement('div');
+//         userCountry.innerHTML = `my country ${users[i].address.country}`;
+//         userCountry.style.backgroundColor = 'blue';
+//         userDiv.appendChild(userCountry);
+//
+//     }
+//     for (let n = 0; n < 1; n++) {
+//         const userStreet = document.createElement('div');
+//         userStreet.innerHTML = `my country ${users[i].address.street}`;
+//         userStreet.style.backgroundColor = 'yellow';
+//         userDiv.appendChild(userStreet);
+//
+//     }
+//     for (let m = 0; m < 1; m++) {
+//         const userNumber = document.createElement('div');
+//         userNumber.innerHTML = ` my house number ${users[i].address.houseNumber}`;
+//         userNumber.style.backgroundColor = 'pink';
+//         userDiv.appendChild(userNumber);
+//
+//     }
+// }
+//
