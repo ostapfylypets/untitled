@@ -127,3 +127,76 @@
 // ===========================================================================================
 
 // створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+// function number(){
+//     console.log(arguments)
+//     let min=arguments[0];
+//     let max=arguments[0];
+// for(let argument of arguments){
+//     if (min>=argument) min=argument;
+//     if (max<=argument) max=argument;
+// }
+// console.log(min);
+// return max;
+// }
+// let num=number(41,23,16,-233,124);
+// console.log(num)
+
+// Взяти задачі з завдання 10 та 9 та обєднати їх в одну динамічну функцію.
+//     Що б я міг сам вибрати повернути мені масив ключів чи масив значень.
+// function arObj(array) {
+//     const arr2 = [];
+//     let keyOfarray=prompt();
+//     if (keyOfarray === 'key') {
+//         for (let item of array) {
+//             for (let key in item) {
+//                 arr2.push(key);
+//             }
+//         }
+//         return arr2
+//     }
+//     else if (keyOfarray === 'array') {
+//         const arr2 = [];
+//         for (let item of array) {
+//             for (let key in item) {
+//                 arr2.push(item[key])
+//             }
+//         }
+//         return arr2;
+//     }
+// }
+// let a=arObj([{name: 'Dima', age: 13}, {car: 'Toyota',model: 'Camry'}])
+// console.log(a)
+
+// Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+// function first(array, i) {
+//     let a = array.splice(i, 1);
+//     for (const aElement of a) {
+//         array.splice(i + 1, 0, aElement);
+//     }
+//     return array
+// }
+//
+// let a = first(['eat', 'min', 'more', 'drink'],0)
+// console.log(a);
+
+// Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву.*/
+//  Зберігаючи при цьому порядок не нульових значень.
+//  Двожина масиву від 2 до 100
+// function array(mass=[arguments]){
+//     for (let i = 100; i >=0; i--) {
+//         if(mass[i]===0){
+//             mass.splice(i,1)
+//             mass.push(0);
+//         }
+//     }
+//     return mass;
+// }
+// console.log(array([100,12,16,0,19,0,22]));
+
+// Дано список імен.
+// let n1 = '    Harry       Potter      '
+// let n2 = '    Ron       Whisley      '
+// let n3 = '    Hermione       Granger      '
+// console.log((n1.trim()).replaceAll('  ',''))
+// console.log((n2.trim()).replaceAll('  ',''))
+// console.log((n3.trim()).replaceAll('  ',''))
