@@ -200,3 +200,22 @@
 // console.log((n1.trim()).replaceAll('  ',''))
 // console.log((n2.trim()).replaceAll('  ',''))
 // console.log((n3.trim()).replaceAll('  ',''))
+
+// Додає в боді блок з текстом "Hello owu"
+// function hello(text){
+//     let a=document.createElement('div');
+//     a.innerHTML=text;
+//     document.body.appendChild(a);
+//     console.log(a);
+// }
+// hello('Hello owu')
+
+// Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// function hello(type,text){
+//     let a=document.createElement(type);
+//     document.body.appendChild(a);
+//     a.innerHTML=text;
+//     console.log(a);
+// }
+// hello('h1','Hello owu')
+
