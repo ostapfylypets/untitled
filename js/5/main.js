@@ -62,7 +62,6 @@
 //
 //     addDriver:function (driver) {
 //         this.driver = driver
-//         console.log(`За машиною сидить: ${this.driver}`)
 //     }
 //
 // };
@@ -70,7 +69,7 @@
 // Car.info()
 // Car.increaseMaxSpeed(1222)
 // Car.changeYear(2021)
-// Car.addDriver('man')
+// Car.addDriver({name:'Ostap',age:19,gender:'m'})
 // console.log(Car)
 
 // ______________________________________________________________________________________________________________________________________________________
@@ -113,17 +112,18 @@
 //
 //     this.addDriver = function (driver) {
 //         this.driver = driver
-//         console.log(`За машиною сидить: ${this.driver}`)
+//
 //
 //     }
 // }
 //
 // let Toyota = new Car('Camry', 'Japan', 2020, 350, 3.5)
+// console.log(Toyota)
 // Toyota.drive()
 // Toyota.info()
 // Toyota.increaseMaxSpeed(1222)
 // Toyota.changeYear(2021)
-// Toyota.addDriver('man')
+// Toyota.addDriver({name:'Ostap',age:19,gender:'m'})
 // console.log(Toyota)
 
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -159,52 +159,88 @@
 //         console.log(`Рік ${this.model} змінився до ${this.age}`)
 //     }
 //
-//     addDriver (driver){
-//     this.driver=driver
-// console.log(`За машиною сидить: ${this.driver}`)
-//
+//     addDriver(driver){
+//         this.driver=driver;
 //     }
 // }
 // let Toyota = new Car('Camry', 'Japan', 2020, 350, 3.5)
+// console.log(Toyota)
 // Toyota.drive()
 // Toyota.info()
 // Toyota.increaseMaxSpeed(1222)
 // Toyota.changeYear(2021)
-// Toyota.addDriver('man')
+// Toyota.addDriver({name:'Ostap',age:19,gender:'m'})
 // console.log(Toyota)
 
 
 // створити класс попелюшка з полями ім'я, вік, розмір ноги
-class Popelushka {
-    constructor(name, age, footSize) {
-        this.name = name;
-        this.age = age;
-        this.footSize = footSize;
-    }
-}
-class Prince extends Popelushka{
-    constructor(name, age, footSize) {
-        super(name, age, footSize);
-    }
+// class Popelushka {
+//     constructor(name, age, shoesSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.shoesSize = shoesSize;
+//     }
+// }
+// class Prince {
+//     constructor(name, age, footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+//
+// }
+//
+//     let a1= new Popelushka('anya', 21, 36);
+//     let a2= new Popelushka('tanya', 22, 38);
+//     let a3= new Popelushka('ina', 23, 34);
+//     let a4= new Popelushka('olya', 26, 39);
+//     let a5= new Popelushka('asya', 25, 34);
+//     let a6= new Popelushka('tosya', 26, 37);
+//     let a7= new Popelushka('daya', 23, 38);
+//     let a8= new Popelushka('ira', 22, 40);
+//     let a9= new Popelushka('yulia', 21, 39);
+//     let a10=new Popelushka('tolya', 45, 54);
+//
+// let b= new Prince('Jeck','34',37)
+// let a=[a1,a2,a3,a4,a5,a6,a7,a8,a9,a10]
+//
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i].shoesSize===b.footSize) {
+//         console.log(a[i])
+//     }
+// }
 
-}
-
-let a = [
-    new Popelushka('anya', 21, 36),
-    new Popelushka('tanya', 22, 38),
-    new Popelushka('ina', 23, 34),
-    new Popelushka('olya', 26, 39),
-    new Popelushka('asya', 25, 34),
-    new Popelushka('tosya', 26, 39),
-    new Popelushka('daya', 23, 38),
-    new Popelushka('ira', 22, 40),
-    new Popelushka('yulia', 21, 37),
-    new Popelushka('tolya', 45, 54),
-]
-let b=new Prince('Jeck','34','37')
-for (let i = 0; i < a.length; i++) {
-    const bElement = a[i];
-    if (b.footSize===a.footSize) {
-        console.log(bElement)
-    }
-}
+// cтворити функцію конструктор попелюшка з полями ім'я, вік, розмір ноги
+// function Popelushka(name, age, shoesSize) {
+//     this.name = name;
+//     this.age = age;
+//     this.shoesSize = shoesSize;
+//
+// }
+//
+// function Prince (name, age, footSize) {
+//     this.name = name;
+//     this.age = age;
+//     this.footSize = footSize;
+// }
+// function result(){
+//     for (let i = 0; i < a.length; i++) {
+//     if (a[i].shoesSize===b.footSize) {
+//         console.log(a[i])
+//     }
+// }
+// }
+// let a1= new Popelushka('anya', 21, 36);
+// let a2= new Popelushka('tanya', 22, 38);
+// let a3= new Popelushka('ina', 23, 34);
+// let a4= new Popelushka('olya', 26, 39);
+// let a5= new Popelushka('asya', 25, 34);
+// let a6= new Popelushka('tosya', 26, 37);
+// let a7= new Popelushka('daya', 23, 38);
+// let a8= new Popelushka('ira', 22, 40);
+// let a9= new Popelushka('yulia', 21, 39);
+// let a10=new Popelushka('tolya', 45, 54);
+//
+// let b= new Prince('Jeck','34',37)
+// let a=[a1,a2,a3,a4,a5,a6,a7,a8,a9,a10]
+// result()
