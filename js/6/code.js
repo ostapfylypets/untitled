@@ -238,3 +238,29 @@ const usersWithAddress = [
 // })
 // console.log(array);
 
+// ______________________________________________________________________________________________________________________________________________________
+//             Додатково
+// ______________________________________________________________________________________________________________________________________________________
+// Cтворити обєкт автомобіля з полями:
+//     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
+//     Власник автомобіля теж має бути обєкт, у якого є поля
+// Імя, вік, стаж водіння.
+//     Створити не менше 7 та не більше 20 машинок.
+//
+Car1=[{mark:'skoda',model:'fabia',power:150,owner: {name:'ostap',age:19,stage:2},price:3500,year:2006}];
+Car2=[{mark:'skoda',model:'octavia',power:150,owner: {name:'tanye',age:21,stage:2},price:5500,year:2006}];
+Car3=[{mark:'wv',model:'passat',power:250,owner: {name:'nastya',age:49,stage:2},price:6500,year:2005}];
+Car4=[{mark:'toyota',model:'camry',power:350,owner: {name:'darya',age:39,stage:2},price:15500,year:2019}];
+Car5=[{mark:'nissan',model:'GTR',power:550,owner: {name:'olya',age:29,stage:2},price:25500,year:2008}];
+Car6=[{mark:'wv',model:'polo',power:90,owner: {name:'kolya',age:71,stage:2},price:2500,year:2008}];
+Car7=[{mark:'wv',model:'golf',power:120,owner: {name:'danya',age:20,stage:2},price:4500,year:2007}];
+
+// // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
+// // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+function powerAndDriver(car,driver){
+    car.power+=(car.power/100*10);
+    car.owner.name=driver;
+}
+powerAndDriver(Car1,'oleg')
+
+
