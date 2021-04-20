@@ -107,32 +107,32 @@ let commentList = [
 
 
 // - Напишіть «Карусель» – стрічку зображень, яку можна гортати вліво-вправо нажаттям на стрілочки.
-// let photo=[
-//     {image:'image/download.jpg'},
-//     {image:'image/eceb8ca1-045e-4aab-81f6-4dcc10445731.jpg'},
-//     {image:'image/Eren_Jaeger_(Anime)_character_image_(850).png'}
-// ]
-// let cont = document.getElementById('cont');
-// let btn1 = document.getElementById('btn1');
-// let btn2 = document.getElementById('btn2');
-// let img = document.createElement('img');
-// cont.appendChild(img);
-// img.style.width = '200px';
-// img.style.height = '200px';
-// img.src = photo[0].image;
-// let currentIndex = 0;
-// btn1.onclick=()=>{
-//     currentIndex - 1 < 0 ?
-//         currentIndex = photo.length - 1 :
-//         currentIndex = currentIndex - 1;
-//     img.src = photo[currentIndex].image;
-// }
-// btn2.onclick=()=>{
-//     currentIndex + 1 > photo.length - 1 ?
-//         currentIndex = 0 :
-//         currentIndex = currentIndex + 1;
-//     img.src = photo[currentIndex].image;
-// }
+let photo=[
+    {image:'image/download.jpg'},
+    {image:'image/eceb8ca1-045e-4aab-81f6-4dcc10445731.jpg'},
+    {image:'image/Eren_Jaeger_(Anime)_character_image_(850).png'}
+]
+let cont = document.getElementById('cont');
+let btn1 = document.getElementById('btn1');
+let btn2 = document.getElementById('btn2');
+let img = document.createElement('img');
+cont.appendChild(img);
+img.style.width = '200px';
+img.style.height = '200px';
+img.src = photo[0].image;
+let currentIndex = 0;
+btn1.onclick=()=>{
+    currentIndex - 1 < 0 ?
+        currentIndex = photo.length - 1 :
+        currentIndex = currentIndex - 1;
+    img.src = photo[currentIndex].image;
+}
+btn2.onclick=()=>{
+    currentIndex + 1 > photo.length - 1 ?
+        currentIndex = 0 :
+        currentIndex = currentIndex + 1;
+    img.src = photo[currentIndex].image;
+}
 
 
 // // ______________________________________________________________________________________________________________________________________________________
@@ -183,8 +183,18 @@ let commentList = [
 
 // -- Створити скрипт, котрий бере зчитує на сторінці (rules.html) текст і робить збоку меню-зміст по всіх заголовках які є в тексті.
 //     При кліку на пункт заголовку ви маєте відправлятись  до цього пункту в тексті
-// ???????????????
-
+// let h2=document.querySelectorAll('h2')
+// for (let i = 0; i < h2.length; i++) {
+//  h2[i].innerHTML=`<a name="${i}" >${h2[i].textContent}</a>`
+// }
+// let ul=document.createElement('ul');
+// document.body.appendChild(ul);
+// for (let i = 0; i < h2.length; i++) {
+//  let li= document.createElement('li')
+//     li.innerHTML=`<a href="#${i}">${h2[i].textContent}</a>`
+//     ul.appendChild(li);
+// }
+//
 
 // -- Взяти масив юзерів
 const usersWithAddress = [
@@ -205,27 +215,22 @@ const usersWithAddress = [
 // 2й - залишає старших 29 років включно
 // 3й - залишає тих в кого місто Київ
 // Дані виводить в документ
-    let  btn1=document.getElementById('status');
-    let  btn2=document.getElementById('age');
-    let  btn3=document.getElementById('city')
-    let divka=document.getElementById('divka')
-let array=JSON.parse(JSON.stringify(usersWithAddress));
-
-btn1.onclick=()=>{
-    if (btn1.checked)
-        array=array.filter(value=>value.isMarried===false);
-    let string=JSON.stringify(array);
-    divka.innerHTML=string;
-}
-btn2.onclick=()=>{
-    if (btn2.checked)
-        array=array.filter(value=>value.age>29);
-    let string=JSON.stringify(array);
-    divka.innerHTML=string;
-}
-btn3.onclick=()=>{
-    if (btn3.checked)
-        array=array.filter(value=>value.address.city==='Kyiv');
-    let string=JSON.stringify(array);
-    divka.innerHTML=string;
-}
+// const inp1 = document.getElementById('inp1');
+// const inp2 = document.getElementById('inp2');
+// const inp3 = document.getElementById('inp3');
+//
+// let usersCopy = JSON.parse(JSON.stringify(usersWithAddress));
+// document.getElementById('sort').onclick = function() {
+//     if (inp1.checked) {
+//         usersCopy = usersCopy.filter(value => value.isMarried === false);
+//     }
+//     if (inp2.checked) {
+//         usersCopy = usersCopy.filter(value => value.age >= 29);
+//     }
+//     if (inp3.checked) {
+//         usersCopy = usersCopy.filter(value => value.address.city === 'Kyiv');
+//     }
+//     for (let user of usersCopy) {
+//         document.write(`<div>Id: ${user.id} Name: ${user.name} Age: ${user.age} Married: ${user.isMarried} City: ${user.address.city}</div>`)
+//     }
+// }
