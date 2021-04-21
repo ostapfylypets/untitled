@@ -62,7 +62,6 @@
 //     let prevarr = JSON.parse(localStorage.getItem('arr'))
 //     if (i > 0) {
 //         i--;
-//
 //         text.value = prevarr[i]
 //     } else if(i===0) {
 //         i=arr.length-1
@@ -72,16 +71,13 @@
 // }
 // next.onclick = () => {
 //     let nextarr = JSON.parse(localStorage.getItem('arr'))
-//     if (i< arr.length-1) {
+//     if (i<arr.length-1){
 //         i++;
-//
-//         text.value = nextarr[i]
-//     }else if(i===arr.length-1) {
-//         i=0
-//         text.value = nextarr[i]
-//
+//         text.value= nextarr[i];
+//     }else if(i===arr.length-1){
+//         i=0;
+//         text.value= nextarr[i];
 //     }
-//
 // }
 
 //- Реализуйте записную книгу, хранящую данные в локальном хранилище.
@@ -91,43 +87,39 @@
 // --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма,
 // в которой есть все необходимые инпуты для редактирования, которые уже заполнены данными объекта
 
-// let forma = document.forms.my;
-// let text = document.getElementsByTagName('textarea');
-// let save = document.querySelector('#save');
-// let next = document.querySelector('#next');
-// let prev = document.querySelector('#previous');
-// let remove = document.querySelector('#remove')
-// let arr = [];
-// let i = arr.length - 1;
-// save.onclick = () => {
-//     arr.push(text.value)
-//     i = arr.length - 1
-//     localStorage.setItem('arr', JSON.stringify(arr));
-//     text.value='';
-// }
-// prev.onclick = () => {
-//     let prevarr = JSON.parse(localStorage.getItem('arr'))
-//     if (i > 0) {
-//         i--;
-//
-//         forma.text.value = prevarr[i]
-//     } else if(i===0) {
-//         i=arr.length-1
-//         forma.text.value = prevarr[i]
-//
-//     }
-// }
-// next.onclick = () => {
-//     let nextarr = JSON.parse(localStorage.getItem('arr'))
-//     if (i< arr.length-1) {
-//         i++;
-//
-//         forma.text.value = nextarr[i]
-//     }else if(i===arr.length-1) {
-//         i=0
-//         forma.text.value = nextarr[i]
-//     }
-// }
-// remove.onclick=()=>{
-//
-// }
+let forma = document.forms.my;
+let ul = document.createElement('ul')
+
+forma.appendChild(ul)
+let arr = [];
+let i = 0
+forma.save.onclick = () => {
+    let obj = {
+        fio: forma.fio.value,
+        number: forma.number.value,
+        mail: forma.mail.value,
+        otdel: forma.otdel.value,
+        age: forma.age.value,
+    }
+    arr.push(obj)
+    console.log(arr);
+    localStorage.setItem("arr", JSON.stringify(arr));
+    let li = document.createElement('li')
+    let delet =document.createElement("input")
+    delet.type='button';
+    delet.value='delete';
+    delet.name=i;
+    li.textContent = `user ${i+1}`;
+    li.appendChild(delet);
+    ul.appendChild(li);
+    i++;
+    delet.addEventListener("click",function (event){
+event.target.parentElement.remove()
+        arr.splice(event.target.name,1)
+        localStorage.setItem("arr", JSON.stringify(arr));
+    })
+}
+
+forma.red.onclick = () => {
+
+}
