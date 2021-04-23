@@ -117,6 +117,7 @@ forma.save.onclick = () => {
 event.target.parentElement.remove()
         arr.splice(event.target.name,1)
         localStorage.setItem("arr", JSON.stringify(arr));
+
     })
 }
 
