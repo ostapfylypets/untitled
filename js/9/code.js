@@ -204,8 +204,10 @@ function sleep(isTired) {
         setTimeout(() => {
             if (isTired) {
                 console.log('Накінець то сон');
+                resolve();
             } else {
                 console.log('Я поіграю в дотку!')
+                reject();
             }
         }, 1000)
     })
